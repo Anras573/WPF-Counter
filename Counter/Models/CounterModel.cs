@@ -1,6 +1,6 @@
 ﻿namespace Counter.Models;
 
-public record CounterModel
+public class CounterModel
 {
     public int Count { get; set; }
 }
