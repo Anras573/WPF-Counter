@@ -8,10 +8,14 @@
              mc:Ignorable="d"
              d:DataContext="{ d:DesignInstance vm:CounterViewModel, IsDesignTimeCreatable=True }"
              d:DesignHeight="300" d:DesignWidth="300">
-    <Grid>
-        <StackPanel HorizontalAlignment="Center" VerticalAlignment="Center">
-            <TextBlock Text="{Binding CounterModel.Count, StringFormat=I was clicked {0} time(s)!}" Margin="0, 0, 0, 20" />
-            <Button Content="Click Me!" Command="{Binding IncrementCommand}" />
-        </StackPanel>
-    </Grid>
+    <StackPanel 
+        HorizontalAlignment="Center" 
+        VerticalAlignment="Center">
+        <TextBlock 
+            Text="{Binding CounterText}"
+            Margin="0, 0, 0, 20" />
+        <Button 
+            Content="Click Me!" 
+            Command="{Binding IncrementCommand}" />
+    </StackPanel>
 </UserControl>

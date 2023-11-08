@@ -1,13 +1,6 @@
-﻿using Counter.Framework;
+﻿namespace Counter.Models;
 
-namespace Counter.Models;
-
-public class CounterModel : BindableBase
+public record CounterModel
 {
-    private int _count;
-    public int Count
-    {
-        get => _count;
-        set => SetField(ref _count, value);
-    }
+    public int Count { get; set; }
 }
